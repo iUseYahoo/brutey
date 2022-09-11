@@ -1,7 +1,7 @@
-# brutey
+## brutey
 A simple bruteforcing class that you can use and edit to your bruteforcing needs.
 
-### Usage
+## Usage
 You can run the bruteforcer but you'll have to pass in certain values for it to work.
 ```
 import bruteclass
