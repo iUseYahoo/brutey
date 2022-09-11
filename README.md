@@ -11,7 +11,7 @@ A simple bruteforcing class that you can use and edit to your bruteforcing needs
   
   ## Editing the class file to your needs
   1) Open [the bruteforcer class at line 55](https://github.com/iUseYahoo/brutey/blob/main/brutey.py#L55).
-  2) If your login request is like mine [view imagine here](https://i.imgur.com/8SzMx5S.png), the standard if statement when it sends the login request will give back that it has found the login when it hasn't, This is because it checks the status code (200). If we have a look at the "Response" tab in the developer tols network viewer, [view my response here](https://i.imgur.com/6b3us7C.png), if yours is like mine then we can add inside the code:
+  2) If your login request is like mine [view imagine here](https://i.imgur.com/8SzMx5S.png), the standard if statement when it sends the login request will give back that it has found the login when it hasn't, This is because it checks the status code (200). If we have a look at the "Response" tab in the developer tools network viewer, [view my response here](https://i.imgur.com/6b3us7C.png), if yours is like mine then we can replace the code with:
   ```py
   if r.status_code == 200 and "Incorrect username and/or password." in r.text:
   ```
